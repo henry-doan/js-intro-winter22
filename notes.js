@@ -223,3 +223,85 @@ const cl = (msg) => {
 // let person2 = {...person}
 
 // cl(person2)
+
+// Obj
+
+// const userInfo = (first, last, middle, age) => {
+//   let fullName = first + ' ' + last
+//   // return { fullName: fullName, middle: middle, age: age }
+//   return { fullName, middle, age }
+// }
+
+// obj destructuring
+// person = { first: 'bob', last: 'smith', email: 'bob@lucky.com', age: 22 }
+
+// let first = person.first
+// let last = person.last
+// let email = person.email
+// let age = person.age
+// const { first, last, email, age } = person
+
+// grab the keys and then have them be variables to use
+
+// cl(`${first} ${last} email: ${email} and is ${age} years old`)
+
+// `
+//   multi
+//   line 
+//   string
+// `
+
+// to have your console open when using
+// debug your code
+// debugger
+
+// JSON 
+// Javascript Object Notation 
+// ruby and js understand json
+
+// {
+//   "firstName": "John",
+//   "age": 45
+// }
+
+// { contacts: [
+//   {"name": 'bob', "phone": "123-123-1231", "email": "bob@email.com"},
+//   {"name": 'bob', "phone": "123-123-1231", "email": "bob@email.com"},
+//   {"name": 'bob', "phone": "123-123-1231", "email": "bob@email.com"},
+// ]}
+
+// contacts.map( c => 
+//   console.log(c)
+// )
+
+// old way 
+// let App = require('app')
+
+// new way would be two parts 
+// import export
+// export - if you want to use the file in other places it would be an export 
+// to bring over files it would be a import 
+
+// import files, packages, things from packages
+// import stuff in a package
+// import React from 'react';
+// import { Component } from 'react';
+or 
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+
+
+// from where is the file from this file 
+// ../ out a folder 
+// ./
+// / in a folder 
+// /filename
+// files within the same folder 
+// export default 
+import Navbar from './app.js'
+
+// regular export 
+import { Navbar, whoisAdmin, numberOfUsers } from './app.js'
+
+
+cl(whoisAdmin)
